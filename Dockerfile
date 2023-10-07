@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-alpine
-RUN apt-get install curl
+RUN yum install curl -y
 VOLUME /tmp
 EXPOSE 8080
 ADD target/springboot-aws-deploy-service.jar springboot-aws-deploy-service.jar
